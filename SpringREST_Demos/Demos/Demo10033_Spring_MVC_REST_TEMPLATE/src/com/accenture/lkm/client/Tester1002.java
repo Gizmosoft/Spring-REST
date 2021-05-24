@@ -15,7 +15,7 @@ import com.accenture.lkm.business.bean.EmployeeBean;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Tester1002 {
-	public static final String REST_SERVICE_URI = "http://localhost:8086/Demo_10032_Spring_MVC_REST_CRUD_JPA_Data_JavaConfig/emp/controller/";
+	public static final String REST_SERVICE_URI = "http://localhost:8081/Demo_10032_Spring_MVC_REST_CRUD_JPA_Data_JavaConfig/emp/controller/";
 	
 	/* GET */
 	@SuppressWarnings("unchecked")
@@ -97,7 +97,7 @@ public class Tester1002 {
 		});
 		
 		//Placing Request with a request body for deletion of Employee
-		restTemplate.delete(REST_SERVICE_URI + "deleteEmp/10002");
+		restTemplate.delete(REST_SERVICE_URI + "deleteEmp/1003");
 		
 		System.out.println("Deleted Successfuly!!!");
 	}

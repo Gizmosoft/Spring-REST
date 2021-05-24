@@ -11,7 +11,7 @@ import com.accenture.lkm.business.bean.EmployeeBean;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Tester1001 {
-	public static final String REST_SERVICE_URI = "http://localhost:8080/Demo_10031_Spring_MVC_REST_CRUD_JPA_Data_XML/emp/controller/";
+	public static final String REST_SERVICE_URI = "http://localhost:8081/Demo_10031_Spring_MVC_REST_CRUD_JPA_Data_XML/emp/controller/";
 	/* GET */
 	@SuppressWarnings("unchecked")
 	private static void listAllEmployees() {
@@ -60,7 +60,7 @@ public class Tester1001 {
 	private static void updateEmployee() {
 		System.out.println("Testing update User API----------");
 		RestTemplate restTemplate = new RestTemplate();
-		EmployeeBean employee =  new EmployeeBean(1003,"TestMSD","Manager",new Date(),1000.0);
+		EmployeeBean employee =  new EmployeeBean(1003,"TestMSD2","Manager",new Date(),1000.0);
 		//Placing Request with a request body for Update
 		restTemplate.put(REST_SERVICE_URI + "updateEmp", employee);
 		System.out.println(employee);
@@ -71,7 +71,7 @@ public class Tester1001 {
 		System.out.println("Testing delete User API----------");
 		RestTemplate restTemplate = new RestTemplate();
 		//Placing Request with a request body for deletion of Employee
-		restTemplate.delete(REST_SERVICE_URI + "deleteEmp/1002");
+		restTemplate.delete(REST_SERVICE_URI + "deleteEmp/1003");
 		System.out.println("Deleted Successfuly!!!");
 	}
 
@@ -79,7 +79,7 @@ public class Tester1001 {
 		listAllEmployees();
 		//getEmployee();
 		//createEmployee();
-		 //updateEmployee();
+		//updateEmployee();
 		//deleteEmployee();
 		
 		

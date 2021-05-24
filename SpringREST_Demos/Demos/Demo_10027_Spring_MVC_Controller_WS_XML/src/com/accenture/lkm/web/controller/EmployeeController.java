@@ -27,6 +27,7 @@ public class EmployeeController {
 	public List<EmployeeBean> getEmployeeDetails(){
 		return employeeService.getAllEmployees();
 	}
+	
 	@RequestMapping(value="emp/controller/xml/getDetails",method=RequestMethod.GET,
 			produces=MediaType.APPLICATION_XML_VALUE)
 	@ResponseBody

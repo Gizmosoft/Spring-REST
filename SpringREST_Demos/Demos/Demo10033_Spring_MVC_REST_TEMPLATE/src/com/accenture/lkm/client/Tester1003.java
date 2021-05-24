@@ -18,7 +18,9 @@ import com.accenture.lkm.business.bean.EmployeeBean;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class Tester1003 {
-	public static final String REST_SERVICE_URI = "http://localhost:8086/Demo_10032_Spring_MVC_REST_CRUD_JPA_Data_JavaConfig/emp/controller/";
+	//public static final String REST_SERVICE_URI = "http://localhost:8086/Demo_10032_Spring_MVC_REST_CRUD_JPA_Data_JavaConfig/emp/controller/";
+	public static final String REST_SERVICE_URI = "http://localhost:8081/Demo_10031_Spring_MVC_REST_CRUD_JPA_Data_XML/emp/controller/";
+	
 	/* GET */
 	@SuppressWarnings("unchecked")
 	private static void listAllEmployees() {
@@ -116,11 +118,11 @@ public class Tester1003 {
 	}
 
 	public static void main(String args[]) {
-		listAllEmployees();
+		//listAllEmployees();
 		//getEmployee();
 		//createEmployee();
 		 //updateEmployee();
-		//deleteEmployee();
+		deleteEmployee();
 		
 		
 	}

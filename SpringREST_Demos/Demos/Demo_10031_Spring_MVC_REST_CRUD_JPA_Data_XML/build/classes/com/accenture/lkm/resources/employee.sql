@@ -1,8 +1,8 @@
 
 -- Dumping database structure for hibernatedemos
-DROP DATABASE IF EXISTS springmvcdemos;
-CREATE DATABASE springmvcdemos; 
-USE springmvcdemos;
+DROP DATABASE IF EXISTS springmvcrest;
+CREATE DATABASE springmvcrest; 
+USE springmvcrest;
 
 
 -- Dumping structure for table hibernatedemos.employee
